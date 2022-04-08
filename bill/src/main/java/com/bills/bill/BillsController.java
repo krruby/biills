@@ -18,7 +18,7 @@ public class BillsController {
 
     public float coinChange( int amount) {
         float min= howSumBest(amount,coins);
-        cnt = new int[]{100,100,100,100,};
+        cnt = new int[]{100,100,100,100};
         return (min==Integer.MAX_VALUE-1)?-1:min;
     }
     int[] bills = new int[]{1,2,5,10,20,50,100};
